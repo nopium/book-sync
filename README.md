@@ -3,13 +3,13 @@ This is a two-way sync script for your Mac and Ebook.
 Install
 =======
 
-* copy sync-books.sh somewhere in your system ( e.g. ~/scripts/sync-books.sh ) and make it executable (chmod +x ~/scripts/sync-books.sh)
-* copy plist file to your ~/Library/LaunchAgents/ folder
+* copy sync-books.sh somewhere in your system ( e.g. `~/scripts/sync-books.sh` ) and make it executable (`chmod +x ~/scripts/sync-books.sh`)
+* copy plist file to your `~/Library/LaunchAgents/` folder
 * edit plist file and correct:
     * the path to sync-books.sh ( `<string>/Users/test/scripts/sync-books.sh</string>` ) should be *absolute* 
 * edit sync-books.sh
-    * the path to your Mac folder with books ( DST=~/Documents/EBOOK/ )
-    * the path to your Ebook folder when it is mounted to the system ( SRC=/Volumes/EBOOK/sync/ )
+    * the path to your Mac folder with books ( `DST=~/Documents/EBOOK/` )
+    * the path to your Ebook folder when it is mounted to the system ( `SRC=/Volumes/EBOOK/sync/` )
 * run: `launchctl load ~/Library/LaunchAgents`
 
 
